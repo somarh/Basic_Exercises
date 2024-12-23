@@ -1,0 +1,23 @@
+import os
+
+# clear
+def clear_terminal():
+    os.system('cls' if os.name == 'nt' else 'clear')
+    
+#hello world
+print( "\nhello world\n")
+
+# for loop til 10
+n=10
+for i in range(n+1):
+    print(i) 
+
+#is even
+value = int(input("\ninsert number\n"))
+
+if value%2 == 0 :
+    print("Even")
+else:
+    print("Odd")
+    
+clear_terminal()

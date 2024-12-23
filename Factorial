@@ -1,0 +1,11 @@
+"""
+Write a program to calculate the 
+factorial of a number using a for loop.
+
+"""
+factorial = int(input())
+result = 1
+for i in range (factorial):
+    result *= factorial
+    factorial = factorial - 1 
+print(f"Factorial: {result}")

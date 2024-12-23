@@ -1,0 +1,57 @@
+# Create a simple calculator that performs: 
+# addition, subtraction, multiplication, and division 
+# based on user input.
+
+def calculations(choice):
+    match choice:
+        case 1:
+            print(f"Result: {addition()} \n")
+        case 2:
+            print(f"Result: {subtraction()} \n")
+        case 3:
+            print(f"Result: {multiplication()} \n")
+        case 4:
+            print(f"Result: {division()} \n")
+
+#Adittion
+def addition():
+    result = 0
+    number = 0
+    while number != "":
+        result += int(number)
+        number = input()
+    return result
+            
+#Subtraction
+def subtraction():
+    number1 = int(input()) 
+    number = 0
+    while number != "":
+        number1-=int(number)
+        number = input()
+        #number1 = number1 - number
+    return number1
+
+#Multiplication
+def multiplication():
+    number1 = int(input()) 
+    number = 1
+    while number != "":
+        number1 = number1*int(number)
+        number = input() 
+    return number1
+
+#Division
+def division():
+    number1 = int(input())
+    number = 1
+    while number != "":
+        number1 = number1 / int(number)
+        number = input()
+    return number1
+        
+        
+
+print("SELECT ON OF THE FOLLOWING OPTIONS: \n 1) Adittion \n 2) Subtraction \n 3) Multiplication \n 4) Division")
+choice = int(input())
+calculations(choice)
